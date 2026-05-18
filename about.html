@@ -116,6 +116,78 @@
       }
     }
 
+    /* ================= HAMBURGER ================= */
+
+.hamburger{
+  display:none;
+  font-size:34px;
+  cursor:pointer;
+  z-index:1001;
+}
+
+.menu-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.3);
+  opacity:0;
+  visibility:hidden;
+  transition:0.4s ease;
+  z-index:998;
+}
+
+.menu-overlay.active{
+  opacity:1;
+  visibility:visible;
+}
+
+.side-menu{
+  position:fixed;
+  top:0;
+  right:-300px;
+  width:260px;
+  height:100vh;
+  background:#fff;
+  padding:90px 35px;
+  box-sizing:border-box;
+
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+
+  transition:0.45s ease;
+  z-index:999;
+}
+
+.side-menu.active{
+  right:0;
+}
+
+.side-menu a{
+  text-decoration:none;
+  color:#111;
+  font-size:22px;
+}
+
+.close-btn{
+  position:absolute;
+  top:25px;
+  right:30px;
+  font-size:38px;
+  cursor:pointer;
+}
+
+@media (max-width:890px){
+
+  .menu{
+    display:none;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+}
+
     /* ================= MOBILE ================= */
 
     @media (max-width:890px){
@@ -162,13 +234,6 @@
   cursor:pointer;
 }
 
-@media (max-width:890px){
-
-  .hamburger{
-    display:block;
-  }
-
-}
 
     }
 
@@ -210,7 +275,7 @@
 
     </nav>
 
-    <div class="hamburger">
+    <div class="hamburger" id="hamburger">
   ☰
 </div>
 
