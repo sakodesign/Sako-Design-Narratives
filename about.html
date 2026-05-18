@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About | Sako Design Narratives</title>
+
+  <style>
+
+    body{
+      margin:0;
+      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+      background:#ffffff;
+      color:#222;
+      overflow-x:hidden;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    .navbar{
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      box-sizing:border-box;
+      background:#ffffff;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      text-decoration:none;
+    }
+
+    .logo-img{
+      width:60px;
+      height:auto;
+      margin-right:12px;
+      mix-blend-mode:multiply;
+    }
+
+    .logo-text-img{
+      height:66px;
+      width:auto;
+      display:block;
+    }
+
+    .menu{
+      display:flex;
+      align-items:center;
+      gap:35px;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:#000;
+      font-size:14px;
+      transition:0.3s ease;
+    }
+
+    .menu a:hover{
+      opacity:0.6;
+    }
+
+    /* ================= ABOUT PAGE ================= */
+
+    .about-page{
+      width:100%;
+      padding-bottom:120px;
+
+      animation:fadePage 1.2s ease;
+    }
+
+    .about-hero{
+      width:100%;
+      display:flex;
+      justify-content:center;
+      margin-top:40px;
+    }
+
+    .about-hero img{
+      width:62%;
+      max-width:950px;
+      height:auto;
+      object-fit:contain;
+    }
+
+    .about-content{
+      width:88%;
+      max-width:1450px;
+      margin:90px auto 0;
+    }
+
+    .about-content p{
+      font-size:18px;
+      line-height:1.95;
+      margin-bottom:40px;
+      font-weight:400;
+    }
+
+    @keyframes fadePage{
+
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width:890px){
+
+      .navbar{
+        padding:15px 20px;
+      }
+
+      .menu{
+        display:none;
+      }
+
+      .logo-img{
+        width:50px;
+      }
+
+      .logo-text-img{
+        height:52px;
+      }
+
+      .about-hero{
+        margin-top:20px;
+      }
+
+      .about-hero img{
+        width:92%;
+      }
+
+      .about-content{
+        width:90%;
+        margin-top:50px;
+      }
+
+      .about-content p{
+        font-size:15px;
+        line-height:1.9;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="navbar">
+
+    <a href="index.html" class="logo">
+
+      <img src="./images/logo.png"
+           alt="Sako Logo"
+           class="logo-img">
+
+      <img src="./images/logo-text.png"
+           alt="Sako Logo"
+           class="logo-text-img">
+
+    </a>
+
+    <nav class="menu">
+
+      <a href="index.html">Home</a>
+
+      <a href="architecture.html">Architecture</a>
+
+      <a href="interior.html">Interior</a>
+
+      <a href="research.html">Research</a>
+
+      <a href="about.html">About</a>
+
+      <a href="contact.html">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <!-- ================= ABOUT PAGE ================= -->
+
+  <section class="about-page">
+
+    <div class="about-hero">
+
+      <img src="./images/WhatsApp Image 2026-05-18 at 13.26.25.jpeg"
+           alt="About Studio">
+
+    </div>
+
+    <div class="about-content">
+
+      <p>
+        sako design narrative is a multidisciplinary design studio based out of Hyderabad, Telangana focusing on the concept that “design can be narrated in various forms”. We narrate a story using various forms and scales; from furniture design, product design, architecture, academia, research, interior design to set design, we have it all!
+      </p>
+
+      <p>
+        We explore all forms of design and our aim is to blend various design disciplines and narrate your design story in our own style.
+        We believe design is a way of life and draw inspiration from movies, books, art, architecture, mythology and research. Our goal is to set up a design warehouse where we explore such stories and constantly strive to keep up with the research that makes our designs functional.
+      </p>
+
+      <p>
+        Our motto is “Stay Beginner” and constantly “Unlearn what we’ve already learnt”. For us, every design is as special as the first and our effort is as new as the beginning!With every project, we are here to figure out our niche while sticking closely to our philosophy of narrating the design.       
+      </p>
+
+      <p>
+        We are always on the lookout for like minded people to collaborate with on something exciting. We strongly believe in teamwork and this helps us to keep evolving (which we love!) and begin new journeys.
+      </p>
+    </div>
+
+  </section>
+
+</body>
+</html>

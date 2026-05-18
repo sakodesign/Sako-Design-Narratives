@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <title>Contact | Sako Design Narratives</title>
+
+  <style>
+
+    body{
+      margin:0;
+      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+      background:#ffffff;
+      color:#111;
+      overflow-x:hidden;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    .navbar{
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      box-sizing:border-box;
+      background:#ffffff;
+      position:relative;
+      z-index:20;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      text-decoration:none;
+    }
+
+    .logo-img{
+      width:60px;
+      margin-right:12px;
+    }
+
+    .logo-text-img{
+      height:66px;
+    }
+
+    .menu{
+      display:flex;
+      gap:35px;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:#111;
+      font-size:14px;
+      transition:0.3s ease;
+    }
+
+    .menu a:hover{
+      opacity:0.6;
+    }
+
+    /* ================= CONTACT PAGE ================= */
+
+    .contact-page{
+      width:100%;
+      min-height:100vh;
+      position:relative;
+      padding:30px 0 80px;
+
+      animation:fadePage 1s ease;
+    }
+
+    .grid-lines{
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .grid-lines span{
+      position:absolute;
+      top:0;
+      bottom:0;
+      width:1px;
+      background:dashed;
+      border-left:1px dashed rgba(0,0,0,0.2);
+    }
+
+    .grid-lines span:nth-child(1){ left:10%; }
+    .grid-lines span:nth-child(2){ left:30%; }
+    .grid-lines span:nth-child(3){ left:50%; }
+    .grid-lines span:nth-child(4){ left:70%; }
+    .grid-lines span:nth-child(5){ left:90%; }
+
+    .two-locations-layout{
+  width:88%;
+  margin:40px auto 0;
+
+  display:grid;
+
+  grid-template-columns:
+  420px
+  1fr;
+
+  row-gap:90px;
+  column-gap:70px;
+
+  align-items:start;
+
+  position:relative;
+  z-index:2;
+}
+
+    /* ================= LEFT CONTENT ================= */
+
+  .contact-info{
+  width:520px;
+  padding-top:10px;
+
+  position:relative;
+  left:300px;
+  top:-40px;
+}
+
+    .contact-info h2{
+      font-size:19px;
+      margin-bottom:30px;
+      font-weight:600;
+      line-height:1.1;
+    }
+
+    .contact-info p{
+  font-size:19px;
+  line-height:1.9;
+  margin:0;
+
+  white-space:nowrap;
+}
+
+.address-line{
+  position:relative;
+  left:-328px;
+}
+.location2-address{
+  position:relative;
+  left:-370px;
+}
+.email-line{
+  position:relative;
+  left:-140px;
+}
+
+.connect-line{
+  position:relative;
+  left:70px;
+}
+
+.social-move{
+  position:relative;
+  left:-50px;
+}
+
+    .contact-info strong{
+  font-size:18px;
+  display:block;
+  margin-top:10px;
+  margin-bottom:20px;
+  font-weight:600;
+}
+    .social-links{
+      display:flex;
+      gap:18px;
+      margin-top:10px;
+    }
+
+    .social-links a{
+      font-size:34px;
+      color:#111;
+      text-decoration:none;
+      transition:0.3s ease;
+    }
+
+    .social-links a:hover{
+      opacity:0.5;
+    }
+
+    /* ================= MAP ================= */
+
+   .contact-map{
+  width:100%;
+  margin-top:-40px;
+
+  position:relative;
+  left:-35px;
+}
+
+  .contact-map img{
+  width:100%;
+  height:570px;
+  display:block;
+  object-fit:cover;
+}
+    /* ================= ANIMATION ================= */
+
+    @keyframes fadePage{
+
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width:890px){
+
+      .navbar{
+        padding:15px 20px;
+      }
+
+      .menu{
+        display:none;
+      }
+
+      .logo-img{
+        width:48px;
+      }
+
+      .logo-text-img{
+        height:52px;
+      }
+
+      .contact-wrapper{
+        width:92%;
+        flex-direction:column;
+        gap:40px;
+      }
+
+      .contact-info{
+        width:100%;
+      }
+
+      .contact-info h2{
+        font-size:30px;
+      }
+
+      .contact-info p{
+        font-size:16px;
+      }
+
+      .contact-map{
+        width:100%;
+      }
+
+      .social-links a{
+        font-size:30px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="navbar">
+
+    <a href="index.html" class="logo">
+
+      <img src="./images/logo.png"
+           alt="Sako Logo"
+           class="logo-img">
+
+      <img src="./images/logo-text.png"
+           alt="Sako Logo"
+           class="logo-text-img">
+
+    </a>
+
+    <nav class="menu">
+
+      <a href="index.html">Home</a>
+
+      <a href="architecture.html">Architecture</a>
+
+      <a href="interior.html">Interior</a>
+
+      <a href="research.html">Research</a>
+
+      <a href="about.html">About</a>
+
+      <a href="contact.html">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <!-- ================= CONTACT PAGE ================= -->
+
+  <section class="contact-page">
+
+    <div class="grid-lines">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="contact-wrapper two-locations-layout">
+
+      <!-- LEFT -->
+
+      <div class="contact-info">
+
+        <h2>Reach out to us</h2>
+
+        <!-- LOCATION 1 -->
+        <p class="address-line">
+  Plot no 18 Mani Bhushan, Arunodaya colony, Madhapur
+</p>
+
+        <p>
+          +91 9542522110<br>
+          +91 8977741164
+        </p>
+
+       <p class="email-line">
+  sakodesignnarratives@gmail.com
+</p>
+
+       <strong class="connect-line">Connect</strong>
+       <div class="social-links social-move">
+
+  <a href="https://www.facebook.com/share/1EnP9qGgGX/"
+   target="_blank">
+
+  <i class="fab fa-facebook-square"></i>
+
+</a>
+
+  <a href="https://youtube.com/@sakodesignnarratives?si=JUKuq-fubCST7gx_"
+   target="_blank">
+
+  <i class="fab fa-youtube"></i>
+
+</a>
+
+  <a href="https://www.instagram.com/sako_design_narratives?igsh=NGwyb2pwZmpiZWpr"
+   target="_blank">
+
+  <i class="fab fa-instagram"></i>
+
+</a>
+
+  <a href="https://www.linkedin.com/company/sako-design-narratives/"
+   target="_blank">
+
+  <i class="fab fa-linkedin"></i>
+
+</a>
+
+</div>
+</div>
+<!-- MAP 1 -->
+
+<div class="contact-map">
+
+  <a href="https://maps.app.goo.gl/txCzLMxhnReJTsRs9"
+     target="_blank">
+
+    <img src="./images/SaKo_Location_page-0001.jpg">
+
+  </a>
+
+</div>
+
+ <!-- LOCATION 2 INFO -->
+
+<div class="contact-info second-location-info">
+
+ <p class="address-line location2-address">
+  Asian Suncity, B Block, 7th Floor, 707, Kondapur, Hyderabad
+</p>
+
+  <p>
+   +91 9542522110<br>
+   +91 8977741164
+  </p>
+
+  <p class="email-line">
+  sakodesignnarratives@gmail.com
+</p>
+
+       <strong class="connect-line">Connect</strong>
+       <div class="social-links social-move">
+
+  <a href="https://www.facebook.com/share/1EnP9qGgGX/"
+   target="_blank">
+
+  <i class="fab fa-facebook-square"></i>
+
+</a>
+
+  <a href="https://youtube.com/@sakodesignnarratives?si=JUKuq-fubCST7gx_"
+   target="_blank">
+
+  <i class="fab fa-youtube"></i>
+
+</a>
+
+  <a href="https://www.instagram.com/sako_design_narratives?igsh=NGwyb2pwZmpiZWpr"
+   target="_blank">
+
+  <i class="fab fa-instagram"></i>
+
+</a>
+
+  <a href="https://www.linkedin.com/company/sako-design-narratives/"
+   target="_blank">
+
+  <i class="fab fa-linkedin"></i>
+
+</a>
+
+</div>
+</div>
+
+<!-- MAP 2 -->
+
+<div class="contact-map">
+
+ <a href="https://maps.app.goo.gl/XWWer5chWuWPUnTG7"
+   target="_blank">
+
+  <img src="./images/SaKo_Location_page-0001.jpg"
+       alt="Location Map 2">
+
+</a>
+  </a>
+
+</div>
+
+  </section>
+
+</body>
+</html>
